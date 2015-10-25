@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Canvas fx:id="canv" height="400.0" layoutX="10.0" layoutY="25.0" nodeOrientation="INHERIT" width="400.0" />
+      <Button layoutX="436.0" layoutY="25.0" mnemonicParsing="false" onAction="#newGameBegin" prefHeight="48.0" prefWidth="204.0" text="New Game" />
+      <RadioButton fx:id="radioEasy" layoutX="451.0" layoutY="91.0" mnemonicParsing="false" selected="true" text="easy">
+         <toggleGroup>
+            <ToggleGroup fx:id="radioLevelGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioMedium" layoutX="510.0" layoutY="91.0" mnemonicParsing="false" text="medium" toggleGroup="$radioLevelGroup" />
+      <RadioButton fx:id="radioHard" layoutX="583.0" layoutY="91.0" mnemonicParsing="false" text="hard" toggleGroup="$radioLevelGroup" />
+      <TextArea fx:id="ScoreBoard" editable="false" layoutX="421.0" layoutY="116.0" prefHeight="137.0" prefWidth="258.0" />
+      <Button fx:id="yellowBut" disable="true" layoutX="554.0" layoutY="356.0" mnemonicParsing="false" onAction="#yellowButton" prefHeight="20.0" prefWidth="80.0" text="Yellow" />
+      <Button fx:id="redBut" disable="true" layoutX="451.0" layoutY="280.0" mnemonicParsing="false" onAction="#redButton" prefHeight="20.0" prefWidth="80.0" text="Red" />
+      <Button fx:id="blueBut" disable="true" layoutX="451.0" layoutY="356.0" mnemonicParsing="false" onAction="#blueButton" prefHeight="20.0" prefWidth="80.0" text="Blue" />
+      <Button fx:id="greenBut" disable="true" layoutX="452.0" layoutY="318.0" mnemonicParsing="false" onAction="#greenButton" prefHeight="20.0" prefWidth="80.0" text="Green" />
+      <Button fx:id="magentaBut" disable="true" layoutX="554.0" layoutY="318.0" mnemonicParsing="false" onAction="#magentaButton" prefHeight="20.0" prefWidth="80.0" text="Magenta" />
+      <Button fx:id="tealBut" disable="true" layoutX="554.0" layoutY="280.0" mnemonicParsing="false" onAction="#tealButton" prefHeight="20.0" prefWidth="80.0" text="Cian" />
+   </children>
+</Pane>
